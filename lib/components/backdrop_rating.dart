@@ -24,7 +24,8 @@ class BackdropAndRating extends StatelessWidget {
           Container(
             height: size.height * 0.4 - 50,
             decoration: BoxDecoration(
-              borderRadius: const BorderRadius.only(bottomLeft: Radius.circular(50)),
+              borderRadius:
+                  const BorderRadius.only(bottomLeft: Radius.circular(50)),
               image: DecorationImage(
                 fit: BoxFit.cover,
                 image: NetworkImage(movie.backdrop),
@@ -55,7 +56,7 @@ class BackdropAndRating extends StatelessWidget {
               ),
               child: Padding(
                 padding:
-                const EdgeInsets.symmetric(horizontal: kDefaultPadding),
+                    const EdgeInsets.symmetric(horizontal: kDefaultPadding),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[

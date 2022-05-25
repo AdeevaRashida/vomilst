@@ -30,7 +30,7 @@ class MovieCard extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(0),
-              boxShadow: [kDefaultShadow],
+              boxShadow: const [kDefaultShadow],
               image: DecorationImage(
                 fit: BoxFit.fill,
                 image: NetworkImage(movie.poster),
@@ -39,7 +39,7 @@ class MovieCard extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
+          padding: const EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
           child: Text(
             movie.title,
             style: Theme.of(context)
